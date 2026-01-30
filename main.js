@@ -5,4 +5,25 @@
 // Esempio:
 // Input: “i topi non avevano nipoti”
 // Output: true
-oi
+
+
+
+function palindromi(str){
+
+    let str_nospace = str.replace(/\W/g, "").toLowerCase();
+    let arr1 = str_nospace.split(``).reverse().join(``);
+    if(arr1 != str_nospace){
+        return false;
+    }else{
+        return true;
+    }
+
+}
+
+
+let stringa = `i topi non avevano nipoti` ;
+
+let check = palindromi(stringa);
+
+console.log(check);
+
